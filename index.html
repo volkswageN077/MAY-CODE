@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flores Amarillas</title>
+</head>
+<body onclick="PlayAudio()"> 
+    <div class="container">
+        <h1>Quiero hacerte un regalo.</h1>
+    <h1>En una de esas estrellas, ahí viviré.</h1>
+    <h1>En una de ellas estaré riendo. Entonces, cuando</h1>
+    <h1 class="highlight">mires por la noche al cielo, te parecerá que todas las estrellas ríen.</h1>
+        <div>
+            <img src="flo.png">
+        </div>
+        <div class="flower-container">
+        </div>
+    </div>
+    <audio id="cancion1" loop>
+        <source src="flores.mp3" type="audio/mp3" />
+        Tu navegador no admite la reproducción de audio.
+    </audio>
+    <script src="script.js"></script>
+    <script>
+        function PlayAudio(){
+            document.getElementById("cancion1").play();
+        }
+    </script>
+</body>
+</html>
